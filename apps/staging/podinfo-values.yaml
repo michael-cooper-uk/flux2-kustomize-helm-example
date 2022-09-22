@@ -12,7 +12,7 @@ spec:
     enable: false
   values:
     ingress:
-    ingressClassName: nginx
+      ingressClassName: nginx
       hosts:
         - host: podinfo-coop.dev.oceanusorigin.com
           paths:
