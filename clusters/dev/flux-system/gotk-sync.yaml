@@ -8,7 +8,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: GDPDEVOPS-6250_flux_demo
+    branch: GDPDEVOPS-6250_mcfly_dev
   secretRef:
     name: flux-system
   url: ssh://git@github.com/michael-cooper-uk/flux2-kustomize-helm-example
