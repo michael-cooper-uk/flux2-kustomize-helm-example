@@ -1,6 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: podinfo-coop2
+namespace: podinfo-coop2 #namespace used in cluster
 resources:
   - ../base/podinfo
 patchesStrategicMerge:
