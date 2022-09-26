@@ -10,7 +10,7 @@ spec:
       chart: podinfo
       sourceRef:
         kind: HelmRepository
-        name: podinfo
+        name: podinfo-coop
         namespace: flux-system
   interval: 5m
   install:
@@ -19,7 +19,6 @@ spec:
   # Default values
   # https://github.com/stefanprodan/podinfo/blob/master/charts/podinfo/values.yaml
   values:
-    cache: tcp://redis-master.redis:6379
     ingress:
       enabled: true
       annotations:
