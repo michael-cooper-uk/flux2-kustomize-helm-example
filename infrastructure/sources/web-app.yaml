@@ -11,7 +11,7 @@ spec:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: artifactory
+  name: jfrog
   namespace: flux-system
 data:
   username: Y29vcGVybWlj
