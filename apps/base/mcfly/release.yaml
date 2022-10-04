@@ -7,7 +7,7 @@ spec:
   releaseName: mcfly
   chart:
     spec:
-      chart: web-app
+      chart: artifactory
       sourceRef:
         kind: HelmRepository
         name: artifactory
