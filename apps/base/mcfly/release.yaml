@@ -1,0 +1,24 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: mcfly
+  namespace: mcfly
+spec:
+  releaseName: mcfly
+  chart:
+    spec:
+      chart: web-app
+      sourceRef:
+        kind: HelmRepository
+        name: artifactory
+        namespace: flux-system
+  interval: 5m
+  install:
+    remediation:
+      retries: 3
+  # Default values
+  values:
+    ingress:
+      enabled: true
+      annotations:
+        kubernetes.io/ingress.class: nginx
