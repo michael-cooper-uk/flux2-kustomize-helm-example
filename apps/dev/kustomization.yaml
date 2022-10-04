@@ -5,3 +5,12 @@ resources:
   - ../base/podinfo
 patchesStrategicMerge:
   - podinfo-values.yaml
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: mcfly #namespace used in cluster
+resources:
+  - ../base/mcfly
+patchesStrategicMerge:
+  - mcfly-values.yaml
+  - mcfly-secret.yaml
